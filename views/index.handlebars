@@ -1,0 +1,38 @@
+<h1>Welcome to Good burger, home of the Good Burger!</h1>
+
+<h2>Food that hasn't been paid for</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless ordered}}
+      {{> burgers/burger-block ordered=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>The order is ready!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if ordered}}
+      {{> burgers/burger-block ordered=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add an Order</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burgername">Burger Name:</label>
+    <input type="text" id="burgername" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="ordered">Ready to pay?</label><br>
+    <input type="radio" name="ordered" value="1" checked> Paid for!<br>
+    <input type="radio" name="ordered" value="0"> Haven't paid
+  </div>
+
+  <button type="submit">Add a Good Burger</button>
+</form>
