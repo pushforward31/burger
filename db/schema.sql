@@ -4,8 +4,8 @@ USE burgers_db;
 
 -- Created the table "schools" 
 CREATE TABLE burgers (
-  id int AUTO_INCREMENT,
+  id int not null AUTO_INCREMENT,
   burger_name varchar(30) NOT NULL,
-  devoured boolean not null,
+  ordered boolean default false,
   PRIMARY KEY(id)
 );

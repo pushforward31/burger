@@ -1,0 +1,33 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+ #one{
+ 	width: 33%;
+ 	float: left;
+ }
+
+ #two{
+ 	width: 33%;
+ 	float: right;
+ }
+
+ body{
+ 	background: url("https://pixel.nymag.com/imgs/daily/intelligencer/2014/11/10/10-kel-good-burger.w710.h473.2x.jpg");
+
+ }
