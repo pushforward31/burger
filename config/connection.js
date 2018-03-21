@@ -1,10 +1,10 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-  port: 8889,
-  host: "localhost",
-  user: "root",
-  password: "root",
+  port: "",
+  host: "us-cdbr-east.cleardb.com/heroku_db",
+  user: "adffdadf2341",
+  password: "adf4234",
   database: "burgers_db"
 });
 
